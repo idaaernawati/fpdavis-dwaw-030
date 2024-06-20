@@ -62,7 +62,7 @@ if option == 'Comparison':
     comparison_data = execute_query(query_comparison)
 
     if not comparison_data.empty:
-        fig1, ax1 = plt.subplots(figsize=(20, 10))
+        fig1, ax1 = plt.subplots(figsize=(21, 10))
         ax1.bar(comparison_data['ProductName'], comparison_data['TotalSales'], color='skyblue')
         ax1.set_xlabel('Product Name')
         ax1.set_ylabel('Total Sales')
@@ -155,7 +155,7 @@ elif option == 'Distribution':
 
     if not distribution_data.empty:
         distribution_data['SalesDate'] = pd.to_datetime(distribution_data['SalesDate'])
-        fig4, ax4 = plt.subplots(figsize=(25, 15))
+        fig4, ax4 = plt.subplots(figsize=(22, 12))
         ax4.plot(distribution_data['SalesDate'], distribution_data['TotalSales'], marker='o', color='green', linestyle='-')
         ax4.set_xlabel('Sales Date')
         ax4.set_ylabel('Total Sales')
