@@ -90,7 +90,7 @@ elif option == 'Relationship':
     relationship_data = execute_query(query_relationship)
 
     if not relationship_data.empty:
-        fig2, ax2 = plt.subplots(figsize=(15, 10))
+        fig2, ax2 = plt.subplots(figsize=(17, 12))
         sns.scatterplot(data=relationship_data, x='CustomerKey', y='ProductKey', hue='EnglishProductName', ax=ax2)
         ax2.set_title('Relationship between Customers and Products')
         ax2.set_xlabel('Customer Key')
