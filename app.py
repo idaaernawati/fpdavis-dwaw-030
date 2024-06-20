@@ -124,7 +124,7 @@ elif option == 'Composition':
     composition_data = execute_query(query_composition)
 
     if not composition_data.empty:
-        fig3, ax3 = plt.subplots(figsize=(7, 5))
+        fig3, ax3 = plt.subplots(figsize=(7, 4))
         outer_colors = ['blue', 'red', 'green']
         ax3.pie(composition_data['TotalSales'], labels=composition_data['CategoryName'], autopct='%1.1f%%', startangle=140, colors=outer_colors, wedgeprops=dict(width=0.3, edgecolor='w'))
         inner_circle = plt.Circle((0, 0), 0.7, color='white')
