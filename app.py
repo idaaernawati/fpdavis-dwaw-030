@@ -47,7 +47,7 @@ st.title("Visualization Dump Data Warehouse Adventure Works")
 
 # Display selected aspect
 if option == 'Comparison':
-    st.header("Comparison of Total Sales by Product")
+    st.header("Comparison Chart - Bar Chart")
     query_comparison = """
     SELECT
         p.EnglishProductName AS ProductName,
@@ -78,7 +78,7 @@ if option == 'Comparison':
         st.warning("No data to display")
 
 elif option == 'Relationship':
-    st.header("Relationship between Customers and Products")
+    st.header("Relationship Chart - Scatter Plot")
     query_relationship = """
     SELECT fs.CustomerKey, fs.ProductKey,
            dc.FirstName, dc.LastName,
@@ -105,7 +105,7 @@ elif option == 'Relationship':
         st.warning("No data to display")
 
 elif option == 'Composition':
-    st.header("Composition of Total Sales by Product Category")
+    st.header("Composition Chart - Donut Chart")
     query_composition = """
     SELECT
         pc.EnglishProductCategoryName AS CategoryName,
@@ -139,7 +139,7 @@ elif option == 'Composition':
         st.warning("No data to display")
 
 elif option == 'Distribution':
-    st.header("Distribution of Sales over Time")
+    st.header("Distribution Chart - Line Chart")
     query_distribution = """
     SELECT
         t.FullDateAlternateKey AS SalesDate,
