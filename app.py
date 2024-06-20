@@ -62,7 +62,7 @@ if option == 'Comparison':
     comparison_data = execute_query(query_comparison)
 
     if not comparison_data.empty:
-        fig1, ax1 = plt.subplots(figsize=(20, 8))
+        fig1, ax1 = plt.subplots(figsize=(20, 10))
         ax1.bar(comparison_data['ProductName'], comparison_data['TotalSales'], color='skyblue')
         ax1.set_xlabel('Product Name')
         ax1.set_ylabel('Total Sales')
