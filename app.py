@@ -155,7 +155,7 @@ elif option == 'Distribution':
 
     if not distribution_data.empty:
         distribution_data['SalesDate'] = pd.to_datetime(distribution_data['SalesDate'])
-        fig4, ax4 = plt.subplots(figsize=(22, 12))
+        fig4, ax4 = plt.subplots(figsize=(20, 15))
         ax4.plot(distribution_data['SalesDate'], distribution_data['TotalSales'], marker='o', color='green', linestyle='-')
         ax4.set_xlabel('Sales Date')
         ax4.set_ylabel('Total Sales')
