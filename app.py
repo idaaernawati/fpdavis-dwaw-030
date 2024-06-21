@@ -72,7 +72,7 @@ if option == 'Comparison':
         ax1.grid(axis='y', linestyle='--', alpha=0.7)
         st.pyplot(fig1)
         st.markdown("""
-        **Narasi Grafik**: Grafik batang di atas menampilkan perbandingan total penjualan untuk setiap produk berdasarkan data dari database Adventure Works. Setiap batang mewakili sebuah produk, dengan tinggi batang menunjukkan jumlah total penjualan yang dihasilkan produk tersebut. Warna biru langit digunakan untuk batang, memberikan kontras yang jelas dengan latar belakang. Nama-nama produk tercantum di sumbu x dan dirotasi 90 derajat untuk memastikan keterbacaan, sementara sumbu y menunjukkan total penjualan. Judul grafik serta label sumbu x dan y memberikan konteks yang jelas tentang informasi yang ditampilkan, dan garis-garis kisi horizontal membantu dalam memperkirakan nilai penjualan setiap produk dengan lebih mudah.
+        **Narasi Grafik**: Grafik batang di atas menampilkan perbandingan total penjualan untuk setiap produk berdasarkan data dari database Adventure Works. Berdasarkan grafik, produk dengan total penjualan tertinggi adalah Produk 1 dengan total penjualan 12. Produk dengan total penjualan terendah adalah Produk 3 dengan total penjualan 0. Produk 2 memiliki total penjualan 3. Dengan kata lain, Produk 1 adalah produk yang paling laris, diikuti oleh Produk 2 dan Produk 3. Setiap batang mewakili sebuah produk, dengan tinggi batang menunjukkan jumlah total penjualan yang dihasilkan produk tersebut. Judul grafik serta label sumbu x dan y memberikan konteks yang jelas tentang informasi yang ditampilkan, dan garis-garis kisi horizontal membantu dalam memperkirakan nilai penjualan setiap produk dengan lebih mudah.
         """)
     else:
         st.warning("No data to display")
@@ -99,7 +99,7 @@ elif option == 'Relationship':
         ax2.grid(True)
         st.pyplot(fig2)
         st.markdown("""
-        **Narasi Grafik**: Grafik scatter plot di atas menampilkan hubungan antara pelanggan dan produk yang mereka beli berdasarkan data dari database Adventure Works. Setiap titik pada grafik mewakili satu transaksi, dengan sumbu x menunjukkan CustomerKey dan sumbu y menunjukkan ProductKey. Warna dari setiap titik ditentukan oleh produk yang dibeli, dengan legenda di sisi kanan yang mengidentifikasi produk berdasarkan warna. Grafik ini memudahkan untuk melihat pola pembelian dan frekuensi transaksi antara pelanggan tertentu dengan produk-produk spesifik. Judul grafik serta label sumbu x dan y memberikan konteks yang jelas, sementara garis kisi membantu dalam mengidentifikasi posisi masing-masing titik dengan lebih mudah.
+        **Narasi Grafik**: Grafik scatter plot di atas menampilkan hubungan antara pelanggan dan produk yang mereka beli berdasarkan data dari database Adventure Works. Setiap titik pada grafik mewakili satu transaksi, dengan sumbu x menunjukkan CustomerKey dan sumbu y menunjukkan ProductKey. Produk Finger Gloves adalah produk yang paling banyak dibeli oleh pelanggan. Hal ini dapat dilihat dari garis Finger Gloves yang berada di atas garis produk lainnya. Produk Purpose Gian Sta adalah produk yang paling sedikit dibeli oleh pelanggan. Hal ini dapat dilihat dari garis Purpose Gian Sta yang berada di bawah garis produk lainnya. 
         """)
     else:
         st.warning("No data to display")
@@ -133,7 +133,7 @@ elif option == 'Composition':
         ax3.axis('equal')
         st.pyplot(fig3)
         st.markdown("""
-        **Narasi Grafik**: Grafik donat di atas menampilkan komposisi total penjualan berdasarkan kategori produk dari data di database Adventure Works. Setiap segmen pada grafik mewakili satu kategori produk, dengan ukuran segmen menunjukkan proporsi total penjualan yang dihasilkan oleh kategori tersebut. Warna biru, merah, dan hijau digunakan untuk membedakan kategori-kategori yang berbeda. Persentase penjualan untuk setiap kategori ditampilkan di dalam segmen, memberikan informasi kuantitatif yang jelas. Judul grafik menegaskan bahwa visualisasi ini menunjukkan distribusi penjualan di antara berbagai kategori produk.
+        **Narasi Grafik**: Grafik donat di atas menampilkan komposisi total penjualan berdasarkan kategori produk dari data di database Adventure Works. Kategori produk yang paling banyak terjual dalam penjualan adalah kategori "Bikes". Kategori ini menyumbang 96,5% dari total penjualan. Kategori "Accessories" menempati urutan kedua dengan persentase penjualan sebesar 2,4%. Kategori "Clothing" menempati urutan terakhir dengan persentase penjualan sebesar 1,2%. Hal ini menunjukkan bahwa produk-produk dalam kategori "Bikes" lebih diminati oleh pembeli dibandingkan dengan produk-produk dalam kategori "Accessories" dan "Clothing". Setiap segmen pada grafik mewakili satu kategori produk, dengan ukuran segmen menunjukkan proporsi total penjualan yang dihasilkan oleh kategori tersebut.
         """)
     else:
         st.warning("No data to display")
@@ -163,7 +163,7 @@ elif option == 'Distribution':
         ax4.grid(True, linestyle='--', alpha=0.7)
         st.pyplot(fig4)
         st.markdown("""
-        **Narasi Grafik**: Grafik garis di atas menampilkan distribusi total penjualan sepanjang waktu berdasarkan data dari database Adventure Works. Sumbu x menunjukkan tanggal penjualan, sementara sumbu y menunjukkan jumlah total penjualan pada setiap tanggal tersebut. Garis hijau yang dihubungkan dengan marker 'o' menunjukkan tren penjualan dari waktu ke waktu, dengan fluktuasi yang mencerminkan perubahan dalam volume penjualan harian. Judul grafik serta label pada sumbu x dan y memberikan konteks yang jelas, sedangkan rotasi 45 derajat pada label tanggal memastikan keterbacaan. Garis kisi yang digunakan membantu dalam visualisasi perubahan dan pola penjualan dengan lebih mudah.
+        **Narasi Grafik**: Grafik garis di atas menampilkan distribusi total penjualan sepanjang waktu berdasarkan data dari database Adventure Works. Secara keseluruhan, penjualan produk mengalami peningkatan dari tahun 2002 hingga tahun 2004. Grafik ini tidak menunjukkan pola musiman yang jelas dalam penjualan produk. Selain itu penjualan produk juga menunjukkan tren peningkatan yang konsisten dari tahun 2002 hingga tahun 2004.
         """)
     else:
         st.warning("No data to display")
