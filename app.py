@@ -7,13 +7,7 @@ import seaborn as sns
 # Koneksi ke database
 def create_connection():
     try:
-        conn = mysql.connector.connect(
-            host="kubela.id",
-            user="davis2024irwan",
-            password="wh451n9m@ch1n3", 
-            port="3306",
-            database="aw"
-        )
+        conn = st.connection("mydb", type="sql", autocommit=True)
         return conn
     except mysql.connector.Error as err:
         st.error(f"Error: {err}")
